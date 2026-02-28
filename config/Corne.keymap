@@ -54,7 +54,7 @@
 
         lower_layer {
 
-            display-name = "Lower";
+            display-name = "Simbolos";
             bindings = <
 &trans      &kp EXCLAMATION    &kp AT_SIGN      &kp HASH               &kp DOLLAR  &kp PERCENT  &kp CARET        &kp AMPERSAND   &kp ASTERISK  &kp MINUS  &trans  &kp BSPC
 &caps_word  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &til_crase  &aspas       &kp LEFT         &kp DOWN        &kp UP        &kp RIGHT  &trans  &trans
@@ -65,7 +65,7 @@
 
         raise_layer {
 
-            display-name = "Raise";
+            display-name = "Numeros";
             bindings = <
 &out OUT_USB  &trans          &trans        &trans        &trans        &trans  &kp F5        &msc SCRL_UP    &trans         &kp C_PLAY_PAUSE  &kp C_NEXT  &kp BACKSPACE
 &trans        &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7          &kp N8         &kp N9            &kp N0      &kp ENTER

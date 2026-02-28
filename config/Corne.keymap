@@ -14,14 +14,14 @@
         mac_ble: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &tog 0>;
+            bindings = <&out OUT_BLE &tog 3>;
             label = "NEW_MACRO";
         };
 
         usb_win: usb_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_USB &tog 0>;
+            bindings = <&out OUT_USB &tog 3>;
             label = "USB_WIN";
         };
     };

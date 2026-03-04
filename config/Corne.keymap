@@ -70,9 +70,9 @@
         raise_layer {
             display-name = "Numeros";
             bindings = <
-&usb_win  &trans        &trans        &trans        &trans        &trans  &kp F5        &msc SCRL_UP    &trans         &kp C_PLAY_PAUSE  &kp C_NEXT  &kp BACKSPACE
+&usb_win  &trans        &trans        &trans        &trans        &trans  &kp F5        &msc SCRL_DOWN  &trans         &kp C_PLAY_PAUSE  &kp C_NEXT  &kp BACKSPACE
 &trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7          &kp N8         &kp N9            &kp N0      &kp ENTER
-&mac_ble  &none         &trans        &trans        &trans        &trans  &trans        &msc SCRL_DOWN  &trans         &trans            &trans      &kp DELETE
+&mac_ble  &none         &trans        &trans        &trans        &trans  &trans        &msc SCRL_UP    &trans         &trans            &trans      &kp DELETE
                                       &trans        &trans        &trans  &trans        &trans          &kp RIGHT_ALT
             >;
         };

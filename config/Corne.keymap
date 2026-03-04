@@ -79,10 +79,10 @@
 
         Mac {
             bindings = <
-&trans            &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans
-&trans            &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans
-&kp LEFT_COMMAND  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans
-                                  &kp LEFT_COMMAND  &trans  &trans  &trans  &trans  &kp RIGHT_COMMAND
+&trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans
+                        &kp LEFT_COMMAND  &trans  &trans  &trans  &trans  &kp RIGHT_COMMAND
             >;
 
             label = "Mac";

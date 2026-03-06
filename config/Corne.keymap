@@ -24,6 +24,13 @@
             bindings = <&out OUT_USB &tog 3>;
             label = "USB_WIN";
         };
+
+        spotlight: spotlight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_COMMAND &kp SPACE>;
+            label = "SPOTLIGHT";
+        };
     };
 
     behaviors {
@@ -62,7 +69,7 @@
             bindings = <
 &trans      &kp EXCLAMATION    &kp AT_SIGN      &kp HASH               &kp DOLLAR  &kp PERCENT  &kp CARET        &kp AMPERSAND   &kp ASTERISK  &kp MINUS  &trans  &kp BSPC
 &caps_word  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &til_crase  &aspas       &kp LEFT         &kp DOWN        &kp UP        &kp RIGHT  &trans  &trans
-&kp LCTRL   &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans      &trans       &kp EQUAL        &kp UNDERSCORE  &kp PLUS      &trans     &trans  &trans
+&kp LCTRL   &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans      &trans       &kp EQUAL        &kp UNDERSCORE  &kp PLUS      &kp PIPE   &trans  &trans
                                                 &kp PRINTSCREEN        &trans      &kp SPACE    &kp RIGHT_SHIFT  &trans          &trans
             >;
         };
@@ -79,10 +86,10 @@
 
         Mac {
             bindings = <
-&trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans
-                        &kp LEFT_COMMAND  &trans  &trans  &trans  &trans  &kp RIGHT_COMMAND
+&trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans
+&trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans
+                        &kp LEFT_COMMAND  &trans  &trans  &trans  &trans  &spotlight
             >;
 
             label = "Mac";

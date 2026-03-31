@@ -11,27 +11,25 @@
 
 / {
     macros {
-        mac_ble: new_macro {
+        mac_ble: mac_ble {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &tog 3>;
-            label = "NEW_MACRO";
+            bindings = <&out OUT_BLE &to 3>;
+            label = "MAC_BLE";
         };
 
         usb_win: usb_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_USB &tog 3>;
+            bindings = <&out OUT_USB &to 0>;
             label = "USB_WIN";
         };
 
         spotlight: spotlight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_COMMAND &kp SPACE>;
+            bindings = <&kp LG(SPACE)>;
             label = "SPOTLIGHT";
-            wait-ms = <2>;
-            tap-ms = <2>;
         };
     };
 
